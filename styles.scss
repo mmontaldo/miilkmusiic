@@ -1,0 +1,79 @@
+@mixin target($target) {
+  @if $target == 'tiny' { // up to 290
+    @media (max-width: 18.125em) { @content; }
+  }
+  @if $target == 'small_device' { // up to 350px
+    @media (max-width: 21.875em) { @content; }
+  }
+  @if $target == 05 { // up to 379px
+    @media (max-width: 23.74999999em) { @content; }
+  }
+  @else if $target == 'under_1' { // up to 380px
+    @media (max-width: 23.75em) { @content; }
+  }
+  @else if $target == 1 { // at least 380px
+    @media (min-width: 23.75em) { @content; }
+  }
+  @else if $target == '1_only' { // between 380px and 679px
+    @media (min-width: 23.75em) and (max-width: 42.49999999em) { @content; }
+  }
+  @else if $target == 'under_2' { // up to 679px
+    @media (max-width: 42.49999999em) { @content; }
+  }
+  @else if $target == 2 { // at least 680px
+    @media (min-width: 42.5em) { @content; }
+  }
+  @else if $target == '2_only' { // between 680px and 1019px
+    @media (min-width: 42.5em) and (max-width: 63.69999999em) { @content; }
+  }
+  @else if $target == 'under_3' { // up to 1019px
+    @media (max-width: 63.69999999em) { @content; }
+  }
+  @else if $target == 3 { // at least 1020px
+    @media (min-width: 63.7em) { @content; }
+  }
+  @else if $target == 'under_4' { // up to 1289px
+    @media (max-width: 80.62499999em) { @content; }
+  }
+  @else if $target == 4 { // at least 1290px
+    @media (min-width: 80.625em) { @content; }
+  }
+  @else if $target == 'extra_large' { // at least 1600px
+    @media (min-width: 100em) { @content; }
+  }
+}
+
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+.background-image {
+  background-image: url('/images/miilk_background.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.social-wrapper {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 130px;
+}
+.social-cntnr {
+  display: inline-block;
+  width: 150px;
+  img {
+    height: 60px;
+    width: 60px;
+  }
+  .instagram-link {
+    float: left;
+  }
+  .facebook-link {
+    float: right;
+  }
+}

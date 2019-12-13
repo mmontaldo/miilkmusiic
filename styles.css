@@ -1,0 +1,38 @@
+body {
+  background-color: powderblue; }
+
+h1 {
+  color: blue; }
+
+p {
+  color: red; }
+
+.background-image {
+  background-image: url("/images/miilk_background.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+
+.social-wrapper {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 130px; }
+
+.social-cntnr {
+  display: inline-block;
+  width: 150px; }
+  .social-cntnr img {
+    height: 60px;
+    width: 60px; }
+  .social-cntnr .instagram-link {
+    float: left; }
+  .social-cntnr .facebook-link {
+    float: right; }
+
+/*# sourceMappingURL=styles.css.map */
