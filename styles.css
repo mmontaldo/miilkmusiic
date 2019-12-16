@@ -22,7 +22,10 @@ p {
   position: relative;
   width: 100%;
   text-align: center;
-  padding-top: 130px; }
+  padding-top: 70px; }
+  @media (min-width: 42.5em) {
+    .social-wrapper {
+      padding-top: 130px; } }
 
 .social-cntnr {
   display: inline-block;
